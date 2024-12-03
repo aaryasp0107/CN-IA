@@ -1,0 +1,12 @@
+ip.addr == []
+arp
+dns or http
+tcp.port == []
+tcp.analysis.flags
+!(arp or dns or icmp)
+tcp.stream eq 32
+udp
+http
+tcp
+icmp
+dns
